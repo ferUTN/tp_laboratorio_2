@@ -4458,11 +4458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UTN\\Programacion y Laboratorio II\\TP N°1\\TP N°1\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\UTN\\Programacion y Laboratorio II\\tp_laboratorio_2\\TP N°1\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\UTN\\Programacion y Laboratorio II\\TP N°1\\TP N°1\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\UTN\\Programacion y Laboratorio II\\tp_laboratorio_2\\TP N°1\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-      "outputPath": "C:\\UTN\\Programacion y Laboratorio II\\TP N°1\\TP N°1\\Entidades\\obj\\",
+      "outputPath": "C:\\UTN\\Programacion y Laboratorio II\\tp_laboratorio_2\\TP N°1\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4497,7 +4497,8 @@
             "version": "[1.6.1, )",
             "autoReferenced": true
           }
-        }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

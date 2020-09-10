@@ -6,3 +6,11 @@ C:\UTN\Programacion y Laboratorio II\TP N°1\TP N°1\Entidades\bin\Debug\netstan
 C:\UTN\Programacion y Laboratorio II\TP N°1\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.dll
 C:\UTN\Programacion y Laboratorio II\TP N°1\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.pdb
 C:\UTN\Programacion y Laboratorio II\TP N°1\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.AssemblyInfoInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\bin\Debug\netstandard1.6\Entidades.deps.json
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\bin\Debug\netstandard1.6\Entidades.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\bin\Debug\netstandard1.6\Entidades.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.AssemblyInfoInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.AssemblyInfo.cs
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°1\Entidades\obj\Debug\netstandard1.6\Entidades.pdb
