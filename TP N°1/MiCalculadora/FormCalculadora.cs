@@ -34,18 +34,9 @@ namespace MiCalculadora
         }
 
 
-        /// <summary>
-        /// Método que inicializa los operandos, la operación y el resultado
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.lblResultado.Text = "";
-            this.txtNumero1.Text = "";
-            this.txtNumero2.Text = "";
-            this.cmbOperador.SelectedItem = null;
-
+            Limpiar();
         }
 
 
@@ -57,6 +48,18 @@ namespace MiCalculadora
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        /// <summary>
+        /// Método que inicializa los operandos, la operación y el resultado
+        /// </summary>
+        private void Limpiar()
+        {
+            this.lblResultado.Text = "";
+            this.txtNumero1.Text = "";
+            this.txtNumero2.Text = "";
+            this.cmbOperador.SelectedItem = null;
         }
 
 
