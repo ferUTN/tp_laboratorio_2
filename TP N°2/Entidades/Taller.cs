@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,19 +12,27 @@ namespace Entidades
     /// </summary>
     public class Taller
     {
-        List<Vehiculo> vehiculos;
-        int espacioDisponible;
+        #region enumerados
         public enum ETipo
         {
-            Moto, Automovil, Camioneta, Todos
+            Ciclomotor, Sedan, SUV, Todos
         }
+        #endregion
+
+
+        #region atributos y propiedades
+        private List<Vehiculo> vehiculos;
+        private int espacioDisponible;
+        #endregion
+
 
         #region "Constructores"
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
-        public Taller(int espacioDisponible)
+
+        public Taller(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -34,9 +43,9 @@ namespace Entidades
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
         /// <returns></returns>
-        public string ToString()
+        public override string ToString()
         {
-            return Taller.Listar(this, ETipo.Todos);
+            return this.Listar(this, ETipo.Todos);
         }
         #endregion
 
@@ -49,32 +58,39 @@ namespace Entidades
         /// <param name="taller">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public string Listar(Taller taller, ETipo tipo)
+        public string Listar(Taller t, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
-            sb.AppendLine("");
-            foreach (Vehiculo v in taller.vehiculos)
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles\n", t.vehiculos.Count, t.espacioDisponible);
+            foreach (Vehiculo v in t.vehiculos)
             {
                 switch (tipo)
                 {
-                    case ETipo.Camioneta:
-                        sb.AppendLine(v.Mostrar());
+                    case ETipo.SUV:
+                        if (v is Suv)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
-                    case ETipo.Moto:
-                        sb.AppendLine(v.Mostrar());
+                    case ETipo.Ciclomotor:
+                        if (v is Ciclomotor)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
-                    case ETipo.Automovil:
-                        sb.AppendLine(v.Mostrar());
+                    case ETipo.Sedan:
+                        if(v is Sedan)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     default:
-                        sb.AppendLine(v.Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         break;
                 }
             }
-
-            return sb;
+            return sb.ToString();
         }
         #endregion
 
@@ -85,34 +101,46 @@ namespace Entidades
         /// <param name="taller">Objeto donde se agregará el elemento</param>
         /// <param name="vehiculo">Objeto a agregar</param>
         /// <returns></returns>
-        public static Taller operator +(Taller taller, Vehiculo vehiculo)
+        public static Taller operator +(Taller t, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller)
+            if ( t.vehiculos.Count() < t.espacioDisponible)
             {
-                if (v == vehiculo)
-                    return taller;
+                bool aux = false;
+                foreach (Vehiculo v in t.vehiculos)
+                {
+                    if (v == vehiculo)
+                    {
+                        aux = true;
+                        break;
+                    }
+                }
+                if (!aux)
+                {            
+                    t.vehiculos.Add(vehiculo);
+                }
             }
-
-            taller.vehiculos.Add(vehiculo);
-            return taller;
+            return t;
         }
+
+
         /// <summary>
         /// Quitará un elemento de la lista
         /// </summary>
         /// <param name="taller">Objeto donde se quitará el elemento</param>
         /// <param name="vehiculo">Objeto a quitar</param>
         /// <returns></returns>
-        public static Taller operator -(Taller taller, Vehiculo vehiculo)
+        public static Taller operator -(Taller t, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller)
+            
+            foreach (Vehiculo v in t.vehiculos)
             {
                 if (v == vehiculo)
                 {
+                    t.vehiculos.Remove(vehiculo);
                     break;
                 }
             }
-
-            return taller;
+            return t;
         }
         #endregion
     }

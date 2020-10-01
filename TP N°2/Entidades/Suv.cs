@@ -6,34 +6,41 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Suv
+    public class Suv : Vehiculo
     {
-        public Suv(EMarca marca, string chasis, ConsoleColor color)
-            : base(chasis, marca, color)
-        {
-        }
+        #region atributos y propiedades
         /// <summary>
         /// SUV son 'Grande'
         /// </summary>
-        protected override short Tamanio
+        protected override ETamanio Tamanio
         {
             get
             {
-                return 0;
+                return ETamanio.Grande;
             }
         }
+        #endregion
 
-        public override sealed string Mostrar()
+        #region constructor
+        public Suv(EMarca marca, string chasis, ConsoleColor color)
+            : base(chasis, marca, color)
+        {
+
+        }
+        #endregion
+
+
+        #region metodos
+        public sealed override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("SUV");
-            sb.AppendLine(base);
-            sb.AppendLine("TAMAÑO : {0}", this.Tamanio);
-            sb.AppendLine("");
+            sb.AppendFormat("SUV\n");
+            sb.AppendFormat("{0}\n", base.Mostrar());
+            sb.AppendFormat("TAMAÑO: {0}\n", this.Tamanio);
             sb.AppendLine("---------------------");
-
-            return sb;
+            return sb.ToString();
         }
+        #endregion
+
     }
 }
