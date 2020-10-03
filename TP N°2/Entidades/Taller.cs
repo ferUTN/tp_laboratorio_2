@@ -8,18 +8,24 @@ using System.Threading.Tasks;
 namespace Entidades
 {
     /// <summary>
+    /// Clase sellada Taller.
     /// No podrá tener clases heredadas.
     /// </summary>
-    public class Taller
+    public sealed class Taller
     {
         #region enumerados
+        /// <summary>
+        /// Enumerado para los tipos de vehículos
+        /// </summary>
         public enum ETipo
         {
             Ciclomotor, Sedan, SUV, Todos
         }
         #endregion
 
-
+        /// <summary>
+        /// Atributos del Taller
+        /// </summary>
         #region atributos y propiedades
         private List<Vehiculo> vehiculos;
         private int espacioDisponible;
@@ -27,11 +33,19 @@ namespace Entidades
 
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor por defecto.
+        /// Inicializa la Lista de vehículos.
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
 
+        /// <summary>
+        /// Constructor sobrecargado.
+        /// </summary>
+        /// <param name="espacioDisponible">Recibe el espacio disponible</param>
         public Taller(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -40,9 +54,10 @@ namespace Entidades
 
         #region "Sobrecargas"
         /// <summary>
+        /// Sobreescritura del método ToString().
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Devuelve los datos del Taller y el de todos los vehículos que contiene</returns>
         public override string ToString()
         {
             return this.Listar(this, ETipo.Todos);
@@ -50,14 +65,12 @@ namespace Entidades
         #endregion
 
         #region "Métodos"
-
         /// <summary>
-        /// Expone los datos del elemento y su lista (incluidas sus herencias)
-        /// SOLO del tipo requerido
+        /// Método para listar los autos del taller que pertenezcan a un tipo
         /// </summary>
-        /// <param name="taller">Elemento a exponer</param>
-        /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
-        /// <returns></returns>
+        /// <param name="taller">Recibe el taller</param>
+        /// <param name="ETipo">Recibe el tipo de vehículo a listar del taller</param>
+        /// <returns>Devuelve los vehículos del tipo solicitado</returns>
         public string Listar(Taller t, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
@@ -96,11 +109,12 @@ namespace Entidades
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Sobrecarga del operador +
+        /// Agregará un vehículo a la lista del taller
         /// </summary>
-        /// <param name="taller">Objeto donde se agregará el elemento</param>
-        /// <param name="vehiculo">Objeto a agregar</param>
-        /// <returns></returns>
+        /// <param name="taller">Recibe el taller a donde se agregará el vehículo</param>
+        /// <param name="vehiculo">Recibe el vehículo a agregar</param>
+        /// <returns>Devuelve el taller</returns>
         public static Taller operator +(Taller t, Vehiculo vehiculo)
         {
             if ( t.vehiculos.Count() < t.espacioDisponible)
@@ -124,11 +138,12 @@ namespace Entidades
 
 
         /// <summary>
-        /// Quitará un elemento de la lista
+        /// Sobrecarga del operador -
+        /// Quitará un vehículo de la lista del taller
         /// </summary>
-        /// <param name="taller">Objeto donde se quitará el elemento</param>
-        /// <param name="vehiculo">Objeto a quitar</param>
-        /// <returns></returns>
+        /// <param name="taller">Recibe el taller de donde se quitará el vehículo</param>
+        /// <param name="vehiculo">Recibe el vehículo a quitar</param>
+        /// <returns>Devuelve el taller</returns>
         public static Taller operator -(Taller t, Vehiculo vehiculo)
         {
             

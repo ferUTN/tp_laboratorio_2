@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Clase Ciclomotor derivada de la clase base Vehiculo
+    /// </summary>
     public class Ciclomotor : Vehiculo
     {
 
         #region atributos y propiedades
         /// <summary>
-        /// Ciclomotor son 'Chico'
+        /// Propiedad para el tamaño de los objetos Ciclomotor.
+        /// Todos los objetos de esta clase son de tamaño "Chico".
         /// </summary>
         protected override ETamanio Tamanio
         {
@@ -22,6 +26,12 @@ namespace Entidades
         }
         #endregion
 
+        /// <summary>
+        /// Constructor sobrecargado
+        /// </summary>
+        /// <param name="marca">Recibe la marca</param>
+        /// <param name="chasis">Recibe el chasis</param>
+        /// <param name="color">Recibe el color</param>
         #region constructor
         public Ciclomotor(EMarca marca, string chasis, ConsoleColor color):base(chasis,marca,color)
         {
@@ -30,6 +40,10 @@ namespace Entidades
         #endregion
 
         #region metodos
+        /// <summary>
+        /// Sobreescritura del método Mostrar()
+        /// </summary>
+        /// <returns>Devuelve una cadena con los datos del objeto Ciclomotor.</returns>
         public sealed override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
