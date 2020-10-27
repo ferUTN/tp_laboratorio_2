@@ -106,6 +106,15 @@ namespace EntidadesAbstractas
         }
 
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("NOMBRE COMPLETO: {0}, {1}\n", this.Apellido, this.Nombre);
+            sb.AppendFormat("NACIONALIDAD: {0}\n", this.Nacionalidad);
+            return sb.ToString();
+        }
+
+
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             switch (nacionalidad)

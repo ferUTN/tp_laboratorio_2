@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C9FB915-D130-48A3-AA4A-1E18C1F55E90}</ProjectGuid>
+    <ProjectGuid>{177E37FD-321F-4A3D-B333-F29F1E777408}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EntidadesAbstractas</RootNamespace>
-    <AssemblyName>Clases Abstractas</AssemblyName>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Clases Instanciables</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Persona.cs" />
+    <Compile Include="Alumno.cs" />
+    <Compile Include="Profesor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Universitario.cs" />
+    <Compile Include="Universidad.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
-      <Project>{3339e599-dcff-4fb7-a979-5f19eebf24b9}</Project>
-      <Name>Excepciones</Name>
+    <ProjectReference Include="..\Clases Abstractas\Clases Abstractas.csproj">
+      <Project>{0c9fb915-d130-48a3-aa4a-1e18c1f55e90}</Project>
+      <Name>Clases Abstractas</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

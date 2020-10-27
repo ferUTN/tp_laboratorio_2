@@ -1,0 +1,11 @@
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
