@@ -1,0 +1,16 @@
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Test_Entidades.exe.config
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Test_Entidades.exe
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Test_Entidades.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Archivos.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Clases Abstractas.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Clases Instanciables.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Excepciones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Archivos.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Clases Abstractas.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Clases Instanciables.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\bin\Debug\Excepciones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\obj\Debug\Test_Entidades.csprojAssemblyReference.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\obj\Debug\Test_Entidades.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\obj\Debug\Test_Entidades.csproj.CopyComplete
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\obj\Debug\Test_Entidades.exe
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Entidades\obj\Debug\Test_Entidades.pdb

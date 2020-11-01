@@ -9,3 +9,5 @@ C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Cl
 C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
 C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
 C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Archivos.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Clases Instanciables\bin\Debug\Archivos.pdb

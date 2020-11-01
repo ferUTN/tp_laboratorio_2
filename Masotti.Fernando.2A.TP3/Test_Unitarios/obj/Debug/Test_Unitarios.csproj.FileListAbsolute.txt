@@ -1,0 +1,25 @@
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Test_Unitarios.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Test_Unitarios.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\obj\Debug\Test_Unitarios.csprojAssemblyReference.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\obj\Debug\Test_Unitarios.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\obj\Debug\Test_Unitarios.csproj.CopyComplete
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\obj\Debug\Test_Unitarios.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\obj\Debug\Test_Unitarios.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Archivos.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Clases Abstractas.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Clases Instanciables.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Excepciones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Archivos.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Clases Abstractas.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Clases Instanciables.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\Masotti.Fernando.2A.TP3\Test_Unitarios\bin\Debug\Excepciones.pdb

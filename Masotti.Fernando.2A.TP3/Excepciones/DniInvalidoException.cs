@@ -9,7 +9,7 @@ namespace Excepciones
     public class DniInvalidoException : Exception
     {
 
-        public DniInvalidoException() : this("Error de formato")
+        public DniInvalidoException() : this("DNI con Error de formato.")
         {
         
         }
