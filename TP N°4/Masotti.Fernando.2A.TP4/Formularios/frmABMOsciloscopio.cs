@@ -57,6 +57,7 @@ namespace Formularios
                         adOsciloscopio.Guardar(osciloscopio);
                     }
 
+                    //Si el delegado tiene al menos un handler lo disparo
                     if (Actualizado != null)
                     {
                         this.Actualizado(this);

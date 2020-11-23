@@ -18,15 +18,22 @@ namespace Formularios
         private int IdSeleccionado = -1;
         private Thread hiloCargarDatos;
 
+        /// <summary>
+        /// Constructor por defecto que inicializa los componentes del formulario
+        /// </summary>
         public frmOsciloscopio()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Al cargar el form se configura la grilla
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmOsciloscopio_Load(object sender, EventArgs e)
         {
             ConfigurarGrilla();
-
 
             this.btnEliminar.Enabled = false;
             this.btnModificar.Enabled = false;
@@ -36,7 +43,11 @@ namespace Formularios
 
         }
 
-
+        /// <summary>
+        /// Si se eligió un osciloscopio se habilitan los botones Eliminar y Modificar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DgvDatos_SelectionChanged(object sender, EventArgs e)
         {
             if (this.dgvDatos.SelectedRows.Count > 0)
@@ -50,7 +61,9 @@ namespace Formularios
             }
         }
 
-
+        /// <summary>
+        /// Método que configura la grilla
+        /// </summary>
         private void ConfigurarGrilla()
         {
 
@@ -73,6 +86,11 @@ namespace Formularios
             this.dgvDatos.RowHeadersVisible = false;
         }
 
+        /// <summary>
+        /// Método para cargar un nuevo osciloscopio en la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             var frmAbm = new frmABMOsciloscopio();
@@ -80,11 +98,20 @@ namespace Formularios
             frmAbm.ShowDialog();
         }
 
+        /// <summary>
+        /// Handler del evento Actualizado para refrescar la grilla
+        /// </summary>
+        /// <param name="sender"></param>
         private void FrmAbm_Actualizado(object sender)
         {
             this.CargarDatosEnThread();
         }
 
+        /// <summary>
+        /// Método para modificar un osciloscopio de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificar_Click(object sender, EventArgs e)
         {
             var frmAbm = new frmABMOsciloscopio(this.IdSeleccionado);
@@ -92,6 +119,11 @@ namespace Formularios
             frmAbm.ShowDialog();
         }
 
+        /// <summary>
+        /// Método para eliminar un osciloscopio de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int idEliminar = this.IdSeleccionado;
@@ -108,6 +140,9 @@ namespace Formularios
             }
         }
 
+        /// <summary>
+        /// Inicio del hilo para cargar los datos en la grilla
+        /// </summary>
         private void CargarDatosEnThread()
         {
             this.HabilitarControles(false);
@@ -144,6 +179,10 @@ namespace Formularios
 
         }
 
+        /// <summary>
+        /// Método paa habilitar o desabilitar los botones
+        /// </summary>
+        /// <param name="habilitar"></param>
         private void HabilitarControles(bool habilitar)
         {
             this.btnNuevo.Enabled = habilitar;

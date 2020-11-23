@@ -36,7 +36,11 @@ namespace Formularios
             this.idSeleccionado = -1;
         }
 
-
+        /// <summary>
+        /// Al cargar el form se configura la grilla y se actualizan los combos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmVenta_Load(object sender, EventArgs e)
         {
             try
@@ -56,6 +60,9 @@ namespace Formularios
             }
         }
 
+        /// <summary>
+        /// Método privado para cargar los datos en la grilla
+        /// </summary>
         private void CargarDatos()
         {
             this.dgvProductos.DataSource = null;
@@ -65,6 +72,11 @@ namespace Formularios
         }
 
 
+        /// <summary>
+        /// Método que carga en el atributo idSeleccionado el id del producto seleccionado de la grilla
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvProductos_SelectionChanged(object sender, EventArgs e)
         {
             if (this.dgvProductos.SelectedRows.Count > 0)
@@ -75,27 +87,43 @@ namespace Formularios
             }
         }
 
+        /// <summary>
+        /// Método privado que agrega productos a la grilla de venta
+        /// </summary>
+        /// <param name="producto"></param>
         private void AgregarProducto(Producto producto)
         {
             this.venta.Items.Add(producto);
             this.CargarDatos();
         }
 
+        /// <summary>
+        /// Método que selecciona el tester a agregar en la grilla de venta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarTester_Click(object sender, EventArgs e)
         {
             var tester = (Tester)cmbTesters.SelectedItem;
             AgregarProducto(tester);
         }
 
+        /// <summary>
+        /// Método que selecciona el osciloscopio a agregar en la grilla de venta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarOsciloscopio_Click(object sender, EventArgs e)
         {
             var osciloscopio = (Osciloscopio)cmbOsciloscopio .SelectedItem;
             AgregarProducto(osciloscopio);
         }
 
+        /// <summary>
+        /// Método privado que configura la grilla
+        /// </summary>
         private void ConfigurarGrilla()
-        {
-            
+        {          
             this.dgvProductos.ColumnHeadersDefaultCellStyle.Font = new Font(this.dgvProductos.Font, FontStyle.Bold);
             this.dgvProductos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
@@ -111,10 +139,13 @@ namespace Formularios
             this.dgvProductos.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             this.dgvProductos.RowHeadersVisible = false;
-            
-
         }
 
+        /// <summary>
+        /// Método que confirma la venta, imprime la factura y serializa la venta (ambos archivos en el escritorio)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             String cadena = "ERROR EN LOS DATOS A FACTURAR\n";
@@ -151,6 +182,11 @@ namespace Formularios
             }
         }
 
+        /// <summary>
+        /// Método que abre el formulario ABM de los tester
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bntTester_Click(object sender, EventArgs e)
         {
             var frmTester = new frmTesters();
@@ -158,6 +194,10 @@ namespace Formularios
             this.ActualizarCombos();
         }
 
+
+        /// <summary>
+        /// Método que actualiza los combos
+        /// </summary>
         private void ActualizarCombos()
         {
             try
@@ -183,6 +223,11 @@ namespace Formularios
         }
 
 
+        /// <summary>
+        /// Método que abre el formulario ABM de los osciloscopios
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOsciloscopio_Click(object sender, EventArgs e)
         {
             var frmOsciloscopio = new frmOsciloscopio();
@@ -190,11 +235,22 @@ namespace Formularios
             this.ActualizarCombos();
         }
 
+        /// <summary>
+        /// Método que cierra la aplicación
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+
+        /// <summary>
+        /// Método que remueve de la grilla de venta el producto seleccionado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnQuitar_Click(object sender, EventArgs e)
         {
             int idEliminar = this.idSeleccionado;
@@ -211,7 +267,6 @@ namespace Formularios
             this.CargarDatos();
 
         }
-
 
     }
 }

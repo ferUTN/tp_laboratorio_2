@@ -17,12 +17,20 @@ namespace Formularios
         private int IdSeleccionado;
         private Thread hiloCargarDatos;
 
+        /// <summary>
+        /// Constructor por defecto que inicializa los componentes del formulario
+        /// </summary>
         public frmTesters()
         {
             InitializeComponent();
             this.IdSeleccionado = -1;
         }
 
+        /// <summary>
+        /// Al cargar el form se configura la grilla
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmTesters_Load(object sender, EventArgs e)
         {
             ConfigurarGrilla();
@@ -32,6 +40,11 @@ namespace Formularios
             this.dgvDatos.SelectionChanged += DgvDatos_SelectionChanged;
         }
 
+        /// <summary>
+        /// Si se eligió un Tester se habilitan los botones Eliminar y Modificar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DgvDatos_SelectionChanged(object sender, EventArgs e)
         {
             if(this.dgvDatos.SelectedRows.Count > 0)
@@ -45,6 +58,9 @@ namespace Formularios
             }
         }
 
+        /// <summary>
+        /// Método que configura la grilla
+        /// </summary>
         private void ConfigurarGrilla()
         {
 
@@ -65,6 +81,11 @@ namespace Formularios
             this.dgvDatos.RowHeadersVisible = false;
         }
 
+        /// <summary>
+        /// Método para cargar un nuevo Tester en la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             var frmAbm = new frmABMTester();
@@ -75,7 +96,7 @@ namespace Formularios
         }
 
         /// <summary>
-        /// Handler del evento actualizado para refrescar el datagrid
+        /// Handler del evento Actualizado para refrescar la grilla
         /// </summary>
         /// <param name="sender"></param>
         private void FrmAbm_Actualizado(object sender)
@@ -83,6 +104,9 @@ namespace Formularios
             CargarDatosEnThread();
         }
 
+        /// <summary>
+        /// Inicio del hilo para cargar los datos en la grilla
+        /// </summary>
         private void CargarDatosEnThread()
         {
             this.HabilitarControles(false);
@@ -90,6 +114,10 @@ namespace Formularios
             this.hiloCargarDatos.Start();
         }
 
+        /// <summary>
+        /// Método paa habilitar o desabilitar los botones
+        /// </summary>
+        /// <param name="habilitar"></param>
         private void HabilitarControles(bool habilitar)
         {
             this.btnNuevo.Enabled = habilitar;
@@ -127,6 +155,11 @@ namespace Formularios
 
         }
 
+        /// <summary>
+        /// Método para modificar un tester de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificar_Click(object sender, EventArgs e)
         {
             var frmAbm = new frmABMTester(this.IdSeleccionado);
@@ -134,6 +167,11 @@ namespace Formularios
             frmAbm.ShowDialog();
         }
 
+        /// <summary>
+        /// Método para eliminar un tester de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int idEliminar = this.IdSeleccionado;
