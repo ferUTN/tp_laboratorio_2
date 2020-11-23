@@ -1,0 +1,6 @@
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\bin\Debug\Extensiones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\bin\Debug\Extensiones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\obj\Debug\Extensiones.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\obj\Debug\Extensiones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\obj\Debug\Extensiones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Extensiones\obj\Debug\Extensiones.csprojAssemblyReference.cache

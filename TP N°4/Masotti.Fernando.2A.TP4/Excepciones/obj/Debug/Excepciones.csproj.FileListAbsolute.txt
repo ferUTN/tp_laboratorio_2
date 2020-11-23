@@ -1,0 +1,6 @@
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\bin\Debug\Excepciones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\bin\Debug\Excepciones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\obj\Debug\Excepciones.dll
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\obj\Debug\Excepciones.pdb
+C:\UTN\Programacion y Laboratorio II\tp_laboratorio_2\TP N°4\Masotti.Fernando.2A.TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
